@@ -11,8 +11,8 @@
 }
 
 .post:hover {
-    background-color: #e8f5fe;
-    color: var(--twitter-color);
+    background-color: var(--help-background);
+    color: var(--help-color);
     transition: color 100ms ease-out;
 }  
 
