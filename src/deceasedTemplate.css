@@ -1,0 +1,70 @@
+/* Deceased Information Posts*/
+.post {
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    display: flex;
+    cursor: pointer;
+    align-items: flex-start;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05);
+}
+
+.post:hover {
+    background-color: #e8f5fe;
+    color: var(--twitter-color);
+    transition: color 100ms ease-out;
+}  
+
+
+.subtitle {
+    width: 100%;
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial;
+    line-height: 25px;
+}
+
+.post-body{
+    width: 100%;
+    align-items: flex-start;
+}
+
+
+.record-info{
+    padding-top: 1px;
+    padding-left: 30px;
+    font-family: Arial;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.basic-detail{
+    padding-top: 1px;
+    padding-left: 10px;
+    font-family: Arial;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.post-id {
+    padding-top: 3px;
+    font-family: Arial;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: end;
+    padding-right: 20px;
+}
+
+.timestamp {
+    padding-top: 1px;
+    padding-left: 5px;
+    font-family: Arial;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+}

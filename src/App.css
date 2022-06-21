@@ -1,5 +1,88 @@
-.App {
-  text-align: center;
+html{
+  height: 100%;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.block-top{
+  position: sticky;
+  box-sizing: border-box;
+}
+
+.block-bottom{
+  flex: 85%;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.subblock-left {
+  flex: 25%;
+  height: 100%;
+  position: sticky;
+  overflow: auto;
+  box-sizing: border-box;
+  border-right: 1px solid #d3d3d3;
+}
+
+.subblock-middle {
+  flex: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border-right: 1px solid #d3d3d3;
+}
+
+.subblock-right {
+  flex: 30%;
+  height: 100%;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+.box-top{
+  flex-basis: 8%;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid #d3d3d3;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.5);
+  font-family: sans-serif;
+  text-align: left;
+  font-weight: bold;
+  font-size: large;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 3%;
+}
+
+.box-middle{
+  flex: 90%;
+  flex-basis: 0;
+  width: 100%;
+  overflow-y: scroll;
+  box-sizing: border-box;
+}
+
+.box-bottom{
+  flex-basis: 10%;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: none;
+  align-items: center;
+}
+
+.return-icon:hover {
+    background-color: #e8f5fe;
+    color: var(--twitter-color);
+    transition: color 100ms ease-out;
 }
 
 body {
@@ -7,50 +90,39 @@ body {
   --twitter-background: #e6ecf0;
 }
 
-.app {
-  display: flex;
-  height: 100vh;
-  max-width: 1300px;
-  margin-left: auto;
-  margin-right: auto;
+
+@media only screen and (max-width: 640px) {
+  body .block-bottom .subblock-left .left-bar {
+    display: none;
+  }
+  body .block-bottom .subblock-left {
+    display: none;
+  }
+  body .block-bottom .subblock-middle {
+    width: 100%;
+  }
+  body .block-bottom .subblock-right {
+    display: none;
+  }
+  body .block-bottom .subblock-middle .box-bottom {
+    display: flex;
+  }
+  body .block-bottom .subblock-middle .box-bottom .LabelBottomNavigation {
+    display: flex;
+  }
 }
 
-/* Deceased Information Posts*/
-.card {
-  width: 50vw;
-  margin: auto;
-  margin-bottom: 5px;
+@media only screen and (max-width: 979px) {
+  body .block-bottom .subblock-left {
+    flex: 15%;
+  }
+  body .block-bottom .subblock-middle {
+    flex: 55%;
+  }
+  body .block-bottom .subblock-right {
+    flex: 30%;
+  }
 }
-.card-title {
-  margin-bottom: 20px;
-  font-size: x-large;
-  font-weight: 800;
-  text-align: center;
-}
-.post-top {
-  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.4);
-  padding: 20px;
-}
-.card-top{
-  align-items: center;
-  display: flex;
-}
+  
 
-.left{
-  left: 0;
-  display: fixed;
-  width: 30%;
-  padding-left: 20px;
-  z-index: 1;
-  height: 100%;
-}
-
-.right{
-  right: 0;
-  display: fixed;
-  width: 70%;
-  z-index: 1;
-  padding-right: 20px;
-  height: 100%;
-}
 

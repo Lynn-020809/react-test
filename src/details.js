@@ -5,35 +5,48 @@ function Details({ name, post_id, timestamp, sex, date_of_birth, date_found, loc
     skin_color, hair_color, hair_length, description}) {
   return (
     <div className="post">
-      <div className="post__body">
-        <div className="post__header">
-          <div className="post__headerText">
-            <h3>
-              {name}{" "}
-              <span className="post__headerSpecial">
-                {post_id}
-              </span>
-            </h3>
+      <div className="post-body">
+        <div className="post-header">
+            {name}{" "}
+          <span className="post-time">
+            {timestamp}
+          </span>     
+        </div>
+  
+      <div className="post-information">
+          <div className="basic-info">
+            Basic Information:
+            <div className="detail-title">Gender:  
+              <span className='detail-info'>{sex}</span></div>
+
+            <div className="detail-title">Date of Birth:  
+              <span className='detail-info'>{date_of_birth}</span></div>
+
+            <div className="detail-title">Date Found:  
+              <span className='detail-info'>{date_found}</span></div>
+            
+            <div className="detail-title">Location Found:  
+              <span className='detail-info'>{location_found}</span></div>
           </div>
-          <div className="post__information">
-              <p className='detail-info'>Gender: {sex}</p>
-              <p className='detail-info'>Date of Birth: {date_of_birth}</p>
-              <p className='detail-info'>Date Found: {date_found}</p>
-              <p className='detail-info'>Location Found: {location_found}</p>
-              <p className='detail-info'>Skin Color: {skin_color}</p>
-              <p className='detail-info'>Hair Color: {hair_color}</p>
-              <p className='detail-info'>Hair Length: {hair_length}</p>
+          <div className="features">
+            Features:
+            <div className="detail-title">Skin Color: 
+              <span className='detail-info'>{skin_color}</span></div>
+            <div className="detail-title">Hair Color: 
+              <span className='detail-info'>{hair_color}</span></div>
+            <div className="detail-title">Hair Length: 
+              <span className='detail-info'>{hair_length}</span></div>
           </div>
-        </div>
-        <div className="post__description">
-            <p className='detail-info'>Description: </p>
-            <p className='detail-info'>{description}</p>
-        </div>
-        <div className="post__footer">
-          <h5>{timestamp}</h5>
-        </div>
+          <div className="description">
+            Description: 
+            <div className='detail-title'>{description}</div>
+          </div>
+      </div>
+      <div className="post-id">
+            post id: {post_id}
       </div>
     </div>
+  </div>
   );
 }
 

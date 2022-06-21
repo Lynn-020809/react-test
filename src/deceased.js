@@ -1,11 +1,5 @@
 import React from "react";
-import './App.css';
-import {
-    Card,
-    CardSubtitle,
-    CardText,
-    CardBody,
-  } from "reactstrap";
+import DeceasedTemplate from "./deceasedTemplate.js";
   
 
 class Deceased extends React.Component
@@ -17,7 +11,7 @@ class Deceased extends React.Component
                 name: "Apple",
                 sex: "Male",
                 post_id: "#000001",
-                timestamp: "9 Jun",
+                timestamp: "3 hours ago",
                 date_of_birth: "1972/05/05",
                 date_found: "2022/05/28",
                 location_found: "Solokhi",
@@ -26,17 +20,44 @@ class Deceased extends React.Component
                 name: "Banana",
                 sex: "Male",
                 post_id: "#000002",
-                timestamp: "12 Jun",
+                timestamp: "12 hours ago",
                 date_of_birth: "1992/05/19",
                 date_found: "2022/06/12",
                 location_found: "Solokhi",
             },
             {
-                name: "NA",
+                name: "Unknown",
                 sex: "Female",
                 post_id: "#000003",
-                timestamp: "13 Jun",
-                date_of_birth: "NA",
+                timestamp: "1 day ago",
+                date_of_birth: "Unknown",
+                date_found: "2022/05/28",
+                location_found: "Solokhi",
+            },
+            {
+                name: "Unknown",
+                sex: "Female",
+                post_id: "#000003",
+                timestamp: "1 day ago",
+                date_of_birth: "Unknown",
+                date_found: "2022/05/28",
+                location_found: "Solokhi",
+            },
+            {
+                name: "Unknown",
+                sex: "Female",
+                post_id: "#000003",
+                timestamp: "1 day ago",
+                date_of_birth: "Unknown",
+                date_found: "2022/05/28",
+                location_found: "Solokhi",
+            },
+            {
+                name: "Unknown",
+                sex: "Female",
+                post_id: "#000003",
+                timestamp: "1 day ago",
+                date_of_birth: "Unknown",
                 date_found: "2022/05/28",
                 location_found: "Solokhi",
             }
@@ -48,43 +69,10 @@ class Deceased extends React.Component
         return (
             this.state.map((post, index) => {
                 return(
-                <Card key={index}>
-                    <CardBody>
-                        <div className="post-top">
-                            <div className="card-top">
-                                <CardSubtitle className="mb-2 text-muted" tag="h6">
-                                    {post.name}
-                                </CardSubtitle>
-                            </div>
-                            <div className="card-body">
-                                <CardText className="basic-info">
-                                    Gender: {post.sex}
-                                </CardText>
-                                <CardText className="basic-info">
-                                    Date of Birth: {post.date_of_birth}
-                                </CardText>
-                                <CardText className="basic-info">
-                                    Date Found: {post.date_found}
-                                </CardText>
-                                <CardText className="basic-info">
-                                    Location Found: {post.location_found}
-                                </CardText>
-                                <CardText>
-                                    <small className="text-muted text-bold">
-                                        Post id: {post.post_id}
-                                    </small>
-                                </CardText>
-                                <CardText>
-                                    <small className="text-muted text-bold">
-                                        {post.timestamp}
-                                    </small>
-                                </CardText>
-                            </div>
-                        </div>
-                    </CardBody>
-                </Card>);
+                    <DeceasedTemplate {...post} key={index} ></DeceasedTemplate>
+                );
             })
-        );
+        )
     }
 
 } export default Deceased;

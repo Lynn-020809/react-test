@@ -7,7 +7,7 @@ function Feed() {
   const post = {
   name: "Apple",
   post_id: "#000001",
-  timestamp: "9 Jun",
+  timestamp: "3 days ago",
   sex: "Male",
   date_of_birth: "1972/05/05",
   date_found: "2022/05/28",
@@ -20,9 +20,6 @@ function Feed() {
 
   return (
     <div className="feed">
-      <div className="feed__header">
-        <h2>Detailed Information</h2>
-      </div>
     <Details
         name={post.name}
         post_id={post.post_id}

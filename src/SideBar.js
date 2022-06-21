@@ -2,21 +2,21 @@ import React from 'react';
 import SidebarOption from './SideBarComponent.js';
 import {MdPersonOutline} from "react-icons/md";
 import {RiFileList3Line} from "react-icons/ri";
-import {FaRegIdCard} from "react-icons/fa";
+import {BiIdCard} from "react-icons/bi";
 import {MdOutlineMap} from "react-icons/md";
 import {RiInboxArchiveLine} from "react-icons/ri";
 import "./SideBar.css";
 
-function Sidebar() {
+function LeftBar() {
     return (
       <div className="sidebar">
-        <SidebarOption Icon={MdPersonOutline} text="Profile" />
-        <SidebarOption Icon={RiFileList3Line} text="Request" />
-        <SidebarOption Icon={FaRegIdCard} text="Deceased Information" active={true} />
-        <SidebarOption Icon={MdOutlineMap} text="Map" />
-        <SidebarOption Icon={RiInboxArchiveLine} text="Inbox" />
+        <SidebarOption Icon={MdPersonOutline} text="Profile" className="smallsidebar"/>
+        <SidebarOption Icon={RiFileList3Line} text="Request" className="smallsidebar"/>
+        <SidebarOption Icon={BiIdCard} text="Deceased" active={true} className="smallsidebar"/>
+        <SidebarOption Icon={MdOutlineMap} text="Map" className="smallsidebar"/>
+        <SidebarOption Icon={RiInboxArchiveLine} text="Inbox" className="smallsidebar"/>
       </div>
     );
   }
   
-  export default Sidebar;
+  export default LeftBar;

@@ -1,28 +1,90 @@
-.post {
-    display: flex;
-    align-items: flex-start;
-    border-bottom: 1px solid var(--twitter-backgroung);
-}
-.post__footer {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
+.post-header {
+    width: 100%;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial;
+    line-height: 25px;
 }
 
-.post__headerSpecial {
+.post-time {
     font-weight: 600;
-    font-size: 12px;
+    font-size: 14px;
     color: gray;
+    line-height: 25px;
+    font-family: Arial;
+    padding-left: 20px;
 }
-.post__headerText > h3 {
+
+.post-id {
+    font-family: Arial;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 25px;
+    text-align: end;
+    padding-right: 30px;
+}
+
+.detail-title{
+    padding-top: 1px;
+    padding-left: 20px;
+    font-family: Arial;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.detail-info{
+    padding-top: 1px;
+    padding-left: 12px;
+    font-family: Arial;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+}
+
+
+
+.post-body{
+    width: 100%;
+    align-items: flex-start;
+}
+
+.post{
+    padding-left: 5px;
+    padding-top: 20px;
+}
+
+
+.basic-info {
+    padding-top: 15px;
+    width: 100%;
+    padding-left: 40px;
     font-size: 15px;
-    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: Arial;
+    line-height: 25px;
 }
-.post__description {
+
+.description {
+    padding-top: 15px;
+    width: 100%;
+    padding-left: 40px;
     font-size: 15px;
-    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: Arial;
+    line-height: 25px;
 }
-.post__body {
-    flex: 1;
-    padding: 10px;
+
+.features {
+    padding-top: 15px;
+    width: 100%;
+    padding-left: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial;
+    line-height: 25px;
 }
+
+
+

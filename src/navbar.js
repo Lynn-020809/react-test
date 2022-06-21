@@ -1,33 +1,87 @@
-import { Navbar, Nav, Form, Button, FormControl } from 'react-bootstrap';
-import React from "react";
-import { Container } from "reactstrap";
-import './App.css';
+import React, { Fragment } from 'react'
+import styled from 'styled-components'
 
+const Wrapper = styled.nav`
+  width: 100%;
+  height: 65px;
+  line-height: 65px;
+  background-color: black;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+`
 
-export default function Header() {
-    return (
-        <Navbar bg="light" expand="lg">
-        <Container fluid>
-            <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
-            <Navbar.Toggle aria-controls="navbarScroll" />
-            <Navbar.Collapse id="navbarScroll">
-            <Nav
-                className="me-auto my-2 my-lg-0"
-                style={{ maxHeight: '100px' }}
-                navbarScroll
-            >
-            </Nav>
-            <Form className="d-flex">
-                <FormControl
-                type="search"
-                placeholder="Search"
-                className="me-2"
-                aria-label="Search"
-                />
-                <Button variant="outline-success">Search</Button>
-            </Form>
-            </Navbar.Collapse>
+const Container = styled.div`
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1300px;
+`
+
+const Nav = styled.nav`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`
+
+const Left = styled.div`
+  flex-basis: auto;
+  align-self: flex-start !important;
+  margin-left: 8%;
+`
+
+const Right = styled.div`
+  flex-basis: 10%;
+  align-self: flex-end !important;
+  margin-right: 8%;
+  a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer
+  }
+`
+
+const Menu = styled.ul`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding:0;
+  margin:0;
+  list-style-type: none;
+`
+
+const Logo = styled.span`
+  font-family: 'Poppins-ExtraBold';
+  font-weight: bold;
+  font-size: 20px;
+  a {
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    color: #fff;
+    text-decoration: none;
+  }
+`
+
+const Navbar = (props) => {
+  return (
+    <Wrapper>
+        <Container>
+        <Nav>
+            <Left>
+            <Logo>HELP</Logo>
+            </Left>
+            <Right>
+            <Menu>
+                <Fragment>
+                    <li>Login</li>
+                    <li>Signup</li>
+                </Fragment>
+            </Menu>
+            </Right>
+        </Nav>  
         </Container>
-        </Navbar>
-    );
-}
+    </Wrapper>
+  )
+} 
+export default Navbar;
