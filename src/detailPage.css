@@ -1,7 +1,6 @@
 .feed {
     flex: 0.4;
     border-right: var(--help-background) 1px solid;
-    min-width: fit-content;
     overflow-y: scroll;
   }
 .feed::-webkit-scrollbar {

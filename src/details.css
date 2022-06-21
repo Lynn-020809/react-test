@@ -21,8 +21,9 @@
     font-weight: 300;
     font-size: 12px;
     line-height: 25px;
-    text-align: end;
-    padding-right: 30px;
+    text-align: start;
+    padding-left: 30px;
+    padding-top: 30px;
 }
 
 .detail-title{
@@ -53,6 +54,7 @@
 .post{
     padding-left: 5px;
     padding-top: 20px;
+    padding-right: 100px;
 }
 
 

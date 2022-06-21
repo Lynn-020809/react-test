@@ -15,7 +15,7 @@ function Feed() {
   skin_color: "Light",
   hair_color: "Black",
   hair_length: "Long",
-  description: "He has an old black hat."};
+  description: "We get it. Learning the meaning of the many words that make up the English language can seem overwhelming. Take away the nerves and make it simple and easy to understand with the use of our sentence maker.YourDictionary strives to make learning as stress-free as possible, no matter what your age or understanding is. And our sentence examples are no different.We understand that sometimes the best way to truly understand a new concept is to see it used in an example. With the help of our useful tool, you can be one step ahead with grasping the complexity and workings of English vocabulary.With an increased understanding of how words can be used, you can make your writing come to life with an arsenal of words of varying difficulties and meanings.Simply type the word into the sentence generator and we’ll do the rest."};
 
 
   return (
