@@ -8,8 +8,8 @@
   }
 
   .sidebarOption:hover {
-    background-color: #e8f5fe;
-    color: var(--twitter-color);
+    background-color: var(--help-background);
+    color: var(--help-color);
     transition: color 100ms ease-out;
   }
   
@@ -21,5 +21,5 @@
     align-items: center;
   }
   .sidebarOption--active {
-    color: var(--twitter-color);
+    color: var(--help-color);
   }

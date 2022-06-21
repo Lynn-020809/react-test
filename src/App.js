@@ -52,7 +52,7 @@ function App() {
             </div>
         </div>
 
-       <DetailedInfoPage /> 
+       <DeceasedInfoPage /> 
 
         <div className="subblock-right">
           <div className="right-bar"></div>
